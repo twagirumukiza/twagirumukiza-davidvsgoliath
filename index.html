@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>David vs Goliath — TWAGIRUMUKIZA V14</title>
+  <meta name="description" content="TWAGIRUMUKIZA — site galerie bilingue consacré à l’œuvre David vs Goliath, avec certificat d’authenticité, galerie et informations d’acquisition." />
+  <style>
+    :root{
+      --bg:#f3efe8; --paper:#fbfaf7; --ink:#111111; --muted:#6b655d; --line:#d9d1c6; --soft:#efe8dc;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%}
+    .wrap{width:min(1180px,92vw);margin:0 auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(243,239,232,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(217,209,198,.9)}
+    .nav{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:16px 0}
+    .brand{font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:.9rem}
+    .nav-right{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+    .nav-links{display:flex;gap:18px;color:var(--muted);font-size:.95rem;flex-wrap:wrap}
+    .lang-switch{display:flex;gap:8px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:6px}
+    .lang-switch button{border:0;background:transparent;padding:8px 12px;border-radius:999px;cursor:pointer;font-weight:600;color:var(--muted)}
+    .lang-switch button.active{background:var(--ink);color:#fff}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 18px;border-radius:999px;border:1px solid var(--ink);font-weight:600;transition:.2s ease;cursor:pointer;background:transparent}
+    .btn:hover{transform:translateY(-1px)}
+    .btn-dark{background:var(--ink);color:#fff}
+    .btn-light{background:var(--paper);color:var(--ink)}
+    .hero{padding:72px 0 56px}
+    .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
+    .eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.78rem;color:var(--muted);margin-bottom:16px}
+    h1{margin:0 0 14px;font-size:clamp(3rem,6vw,6rem);line-height:.92;letter-spacing:-.05em}
+    .lead{margin:0 0 24px;max-width:700px;color:var(--muted);font-size:1.06rem}
+    .hero-actions,.certificate-actions,.social-row,.status-actions,.chips{display:flex;gap:12px;flex-wrap:wrap}
+    .chip{display:inline-flex;align-items:center;padding:9px 13px;border-radius:999px;border:1px solid var(--line);background:var(--paper);font-size:.92rem;color:var(--muted)}
+    .hero-card,.panel,.certificate-view,.footer-card,.artist-photo-wrap,.collection-card{background:var(--paper);border:1px solid var(--line);border-radius:24px}
+    .hero-card{padding:18px;box-shadow:0 18px 48px rgba(0,0,0,.06)}
+    .image-open{display:block;overflow:hidden;border-radius:20px;background:#000}
+    .image-open img{width:100%;height:min(78vh,860px);object-fit:cover;transition:transform .35s ease,opacity .35s ease}
+    .image-open:hover img{transform:scale(1.018);opacity:.98}
+    .image-note{display:flex;justify-content:space-between;align-items:center;padding:14px 6px 2px;color:var(--muted);font-size:.92rem;gap:12px;flex-wrap:wrap}
+    section{padding:76px 0;border-top:1px solid var(--line)}
+    h2{margin:0 0 12px;font-size:clamp(1.9rem,3vw,3.2rem);line-height:1.02;letter-spacing:-.03em}
+    .section-intro{max-width:780px;color:var(--muted);font-size:1.03rem;margin-bottom:30px}
+    .panel{padding:28px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .specs{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 24px}
+    .spec{padding:10px 0;border-bottom:1px solid var(--line)}
+    .spec b{display:block;font-size:.94rem}
+    .spec span{color:var(--muted)}
+    .status-card{background:#151515;color:#fff;border-radius:28px;padding:28px;border:1px solid #151515}
+    .status-top{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:flex-start;margin-bottom:18px}
+    .status-label{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:#c9c9c9}
+    .status-value{font-size:2rem;line-height:1;letter-spacing:-.03em;margin-top:8px}
+    .badge{display:inline-flex;align-items:center;padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.18);color:#fff;background:rgba(255,255,255,.05);font-size:.9rem}
+    .status-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .status-item{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:16px}
+    .status-item b{display:block;margin-bottom:6px}
+    .status-item span{color:#d9d9d9;font-size:.95rem}
+    .status-card .btn-light{background:#fff;color:#111;border-color:#fff}
+    .collection-card{overflow:hidden;box-shadow:0 10px 24px rgba(0,0,0,.04)}
+    .thumb{display:block;cursor:pointer;background:#000}
+    .thumb img{width:100%;aspect-ratio:1/1;object-fit:cover;transition:transform .3s ease,opacity .3s ease}
+    .thumb:hover img{transform:scale(1.03);opacity:.97}
+    .collection-body{padding:18px}
+    .meta{color:var(--muted);font-size:.94rem;margin-top:6px}
+    .timeline{display:grid;gap:14px}
+    .timeline-item{display:grid;grid-template-columns:120px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+    .timeline-year{font-weight:700}
+    .artist-card{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:start}
+    .artist-photo-wrap{padding:18px}
+    .artist-photo{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:18px}
+    .social-link,.footer-link-button{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border:1px solid var(--line);border-radius:999px;background:#fff}
+    .certificate-view{padding:22px}
+    .certificate-preview{width:100%;border-radius:16px;border:1px solid var(--line);background:#fff}
+    footer{border-top:1px solid var(--line)}
+    .footer-main{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:start;padding:28px 0 10px}
+    .footer-card{padding:22px}
+    .footer-small,.footer-row{color:var(--muted);font-size:.92rem}
+    .footer-row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:46px;font-size:.95rem}
+    @media (max-width:980px){.hero-grid,.grid-2,.grid-3,.specs,.status-grid,.footer-main,.artist-card{grid-template-columns:1fr}.image-open img{height:auto;max-height:none}}
+    @media (max-width:780px){.nav{align-items:flex-start}.nav-right{flex-direction:column;align-items:flex-end}.nav-links{display:none}section{padding:58px 0}.timeline-item{grid-template-columns:1fr;gap:6px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">TWAGIRUMUKIZA</div>
+      <div class="nav-right">
+        <nav class="nav-links">
+          <a href="#featured" data-fr="Œuvre phare" data-en="Featured work">Œuvre phare</a>
+          <a href="#details" data-fr="Détails" data-en="Details">Détails</a>
+          <a href="#certificate" data-fr="Certificat" data-en="Certificate">Certificat</a>
+          <a href="#collection" data-fr="Galerie" data-en="Gallery">Galerie</a>
+          <a href="#artist" data-fr="Artiste" data-en="Artist">Artiste</a>
+          <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+        </nav>
+        <div class="lang-switch" aria-label="Language selector">
+          <button type="button" id="btn-fr" onclick="setLanguage('fr')">FR</button>
+          <button type="button" id="btn-en" onclick="setLanguage('en')">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="border-top:none">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow" data-fr="Galerie · Noir et blanc · Œuvre originale" data-en="Gallery · Black and white · Original artwork">Galerie · Noir et blanc · Œuvre originale</div>
+          <h1 data-fr="David vs Goliath" data-en="David vs Goliath">David vs Goliath</h1>
+          <p class="lead" data-fr="Site galerie TWAGIRUMUKIZA consacré à l’œuvre David vs Goliath, entre référence classique, intensité graphique contemporaine et prolongement dans l’espace urbain." data-en="TWAGIRUMUKIZA gallery site dedicated to David vs Goliath, between classical reference, contemporary graphic intensity, and extension into urban space.">Site galerie TWAGIRUMUKIZA consacré à l’œuvre David vs Goliath, entre référence classique, intensité graphique contemporaine et prolongement dans l’espace urbain.</p>
+          <div class="hero-actions">
+            <a class="btn btn-dark" href="#contact">Acquire artwork</a>
+            <a class="btn btn-light" href="#certificate" data-fr="Voir le certificat" data-en="View certificate">Voir le certificat</a>
+          </div>
+          <div class="chips">
+            <span class="chip">Original / Available</span>
+            <span class="chip" data-fr="Certificat d’authenticité" data-en="Certificate of authenticity">Certificat d’authenticité</span>
+            <span class="chip" data-fr="Édition limitée" data-en="Limited edition">Édition limitée</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <a class="image-open" href="viewer.html?src=images/cover.png&caption=David%20vs%20Goliath&back=index.html#featured" target="_blank" rel="noopener">
+            <img src="images/cover.png" alt="David vs Goliath" />
+          </a>
+          <div class="image-note">
+            <span data-fr="Cliquez sur l’image pour l’ouvrir dans un autre onglet" data-en="Click the image to open it in a new tab">Cliquez sur l’image pour l’ouvrir dans un autre onglet</span>
+            <a class="footer-link-button" href="viewer.html?src=images/cover.png&caption=David%20vs%20Goliath&back=index.html#featured" target="_blank" rel="noopener" data-fr="Ouvrir en grand" data-en="Open large">Ouvrir en grand</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured">
+      <div class="wrap grid-2">
+        <div class="panel">
+          <h2 data-fr="Une œuvre charnière" data-en="A key artwork">Une œuvre charnière</h2>
+          <p class="section-intro" data-fr="David vs Goliath reprend la force symbolique du David dans une écriture graphique tranchée, frontale et contemporaine. Le contraste noir et blanc amplifie la tension du regard et de la posture." data-en="David vs Goliath reinterprets the symbolic power of David through a sharp, frontal, contemporary graphic language. The black-and-white contrast intensifies the tension of the gaze and posture.">David vs Goliath reprend la force symbolique du David dans une écriture graphique tranchée, frontale et contemporaine. Le contraste noir et blanc amplifie la tension du regard et de la posture.</p>
+          <div class="specs">
+            <div class="spec"><b data-fr="Titre" data-en="Title">Titre</b><span>David vs Goliath</span></div>
+            <div class="spec"><b data-fr="Année" data-en="Year">Année</b><span>2020</span></div>
+            <div class="spec"><b data-fr="Technique" data-en="Technique">Technique</b><span data-fr="Acrylique sur papier" data-en="Acrylic on paper">Acrylique sur papier</span></div>
+            <div class="spec"><b data-fr="Dimensions" data-en="Dimensions">Dimensions</b><span>50 × 70 cm</span></div>
+            <div class="spec"><b data-fr="Numérotation" data-en="Numbering">Numérotation</b><span>1/10</span></div>
+            <div class="spec"><b data-fr="Référence" data-en="Reference">Référence</b><span>N° 20231228100505</span></div>
+          </div>
+        </div>
+
+        <div class="status-card">
+          <div class="status-top">
+            <div>
+              <div class="status-label" data-fr="Statut" data-en="Status">Statut</div>
+              <div class="status-value">Original / Available</div>
+            </div>
+            <span class="badge" data-fr="Certificat inclus" data-en="Certificate included">Certificat inclus</span>
+          </div>
+          <div class="status-grid">
+            <div class="status-item"><b data-fr="Création" data-en="Creation">Création</b><span data-fr="Paris · 22/03/2020" data-en="Paris · 22/03/2020">Paris · 22/03/2020</span></div>
+            <div class="status-item"><b data-fr="Support" data-en="Support">Support</b><span data-fr="Papier" data-en="Paper">Papier</span></div>
+            <div class="status-item"><b data-fr="Signature" data-en="Signature">Signature</b><span data-fr="Dernière" data-en="Final">Dernière</span></div>
+          </div>
+          <div class="status-actions">
+            <a class="btn btn-light" href="#contact">Acquire artwork</a>
+            <a class="btn" href="certificat-20231228100505.pdf" target="_blank" rel="noopener" data-fr="Télécharger le certificat" data-en="Download certificate">Télécharger le certificat</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="details">
+      <div class="wrap grid-2">
+        <div class="panel">
+          <h2 data-fr="L’œuvre" data-en="The artwork">L’œuvre</h2>
+          <p class="section-intro" data-fr="Dessin inspiré de la statue de David sculptée par Michel-Ange. Œuvre réalisée à Paris, au jour 5 du confinement, dans une économie de moyens qui laisse toute la place à la présence du visage et à la puissance du vide." data-en="Drawing inspired by Michelangelo’s David. Created in Paris on day 5 of the lockdown, the work uses a reduced visual language that gives full space to the face and to the power of emptiness.">Dessin inspiré de la statue de David sculptée par Michel-Ange. Œuvre réalisée à Paris, au jour 5 du confinement, dans une économie de moyens qui laisse toute la place à la présence du visage et à la puissance du vide.</p>
+          <a class="image-open" href="viewer.html?src=images/drawing.jpg&caption=David%20vs%20Goliath%20%E2%80%94%20drawing&back=index.html#details" target="_blank" rel="noopener">
+            <img src="images/drawing.jpg" alt="David vs Goliath drawing" />
+          </a>
+        </div>
+        <div class="panel">
+          <h2 data-fr="Parcours de l’œuvre" data-en="Artwork timeline">Parcours de l’œuvre</h2>
+          <div class="timeline">
+            <div class="timeline-item"><div class="timeline-year">22/03/2020</div><div data-fr="Création de l’œuvre à Paris, jour 5 du confinement." data-en="Artwork created in Paris, on day 5 of lockdown.">Création de l’œuvre à Paris, jour 5 du confinement.</div></div>
+            <div class="timeline-item"><div class="timeline-year">2020</div><div data-fr="L’image de l’œuvre dépasse les 20 000 000 vues." data-en="The image of the artwork exceeds 20,000,000 views.">L’image de l’œuvre dépasse les 20 000 000 vues.</div></div>
+            <div class="timeline-item"><div class="timeline-year" data-fr="Après" data-en="After">Après</div><div data-fr="Exposition en galerie à La Défense." data-en="Exhibited in a gallery in La Défense.">Exposition en galerie à La Défense.</div></div>
+            <div class="timeline-item"><div class="timeline-year">10/2022</div><div data-fr="Fresque murale à Spot 13." data-en="Mural intervention at Spot 13.">Fresque murale à Spot 13.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificate">
+      <div class="wrap">
+        <h2 data-fr="Certificat d’authenticité" data-en="Certificate of authenticity">Certificat d’authenticité</h2>
+        <p class="section-intro" data-fr="Le certificat associé à l’œuvre mentionne le numéro 20231228100505, l’année de réalisation 2020, les dimensions 50 × 70 cm et la numérotation 1/10." data-en="The certificate associated with the artwork states the number 20231228100505, the year 2020, the dimensions 50 × 70 cm, and the numbering 1/10.">Le certificat associé à l’œuvre mentionne le numéro 20231228100505, l’année de réalisation 2020, les dimensions 50 × 70 cm et la numérotation 1/10.</p>
+        <div class="certificate-view">
+          <a class="image-open" href="viewer.html?src=images/certificate-preview.png&caption=Certificate%20of%20authenticity%20%E2%80%94%20David%20vs%20Goliath&back=index.html#certificate" target="_blank" rel="noopener">
+            <img class="certificate-preview" src="images/certificate-preview.png" alt="Certificate preview for David vs Goliath" />
+          </a>
+          <div class="certificate-actions">
+            <a class="btn btn-dark" href="certificat-20231228100505.pdf" target="_blank" rel="noopener" data-fr="Ouvrir le PDF" data-en="Open PDF">Ouvrir le PDF</a>
+            <a class="btn btn-light" href="certificat-20231228100505.pdf" download data-fr="Télécharger" data-en="Download">Télécharger</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="collection">
+      <div class="wrap">
+        <h2 data-fr="Galerie" data-en="Gallery">Galerie</h2>
+        <p class="section-intro" data-fr="Chaque image s’ouvre dans un autre onglet, avec une page dédiée, un vrai bouton retour corrigé et un accès direct au site." data-en="Each image now opens in a new tab, with a dedicated page and a button to return to the website.">Chaque image s’ouvre dans un autre onglet, avec une page dédiée, un vrai bouton retour corrigé et un accès direct au site.</p>
+        <div class="grid-3">
+          <article class="collection-card">
+            <a class="thumb" href="viewer.html?src=images/frame.jpg&caption=David%20vs%20Goliath%20%E2%80%94%20framed&back=index.html#collection" target="_blank" rel="noopener"><img src="images/frame.jpg" alt="Framed artwork" /></a>
+            <div class="collection-body"><strong data-fr="Version encadrée" data-en="Framed version">Version encadrée</strong><div class="meta" data-fr="Présentation intérieure" data-en="Interior presentation">Présentation intérieure</div></div>
+          </article>
+          <article class="collection-card">
+            <a class="thumb" href="viewer.html?src=images/gallery-frame.jpg&caption=David%20vs%20Goliath%20%E2%80%94%20gallery%20view&back=index.html#collection" target="_blank" rel="noopener"><img src="images/gallery-frame.jpg" alt="Gallery framed artwork" /></a>
+            <div class="collection-body"><strong data-fr="Vue galerie" data-en="Gallery view">Vue galerie</strong><div class="meta" data-fr="Installation en espace d’exposition" data-en="Installed in an exhibition space">Installation en espace d’exposition</div></div>
+          </article>
+          <article class="collection-card">
+            <a class="thumb" href="viewer.html?src=images/spot13-a.jpg&caption=David%20vs%20Goliath%20%E2%80%94%20Spot%2013&back=index.html#collection" target="_blank" rel="noopener"><img src="images/spot13-a.jpg" alt="Spot 13 mural" /></a>
+            <div class="collection-body"><strong>Spot 13</strong><div class="meta" data-fr="Intervention murale" data-en="Wall intervention">Intervention murale</div></div>
+          </article>
+          <article class="collection-card">
+            <a class="thumb" href="viewer.html?src=images/spot13-b.jpg&caption=David%20vs%20Goliath%20%E2%80%94%20Spot%2013%20wide%20view&back=index.html#collection" target="_blank" rel="noopener"><img src="images/spot13-b.jpg" alt="Spot 13 mural wide view" /></a>
+            <div class="collection-body"><strong data-fr="Vue large" data-en="Wide view">Vue large</strong><div class="meta" data-fr="Mur peint dans son environnement" data-en="Painted wall in its environment">Mur peint dans son environnement</div></div>
+          </article>
+          <article class="collection-card">
+            <a class="thumb" href="viewer.html?src=images/spot13-c.jpg&caption=David%20vs%20Goliath%20%E2%80%94%20Spot%2013%20detail&back=index.html#collection" target="_blank" rel="noopener"><img src="images/spot13-c.jpg" alt="Spot 13 detail" /></a>
+            <div class="collection-body"><strong data-fr="Vue frontale" data-en="Frontal view">Vue frontale</strong><div class="meta" data-fr="Version monumentale" data-en="Monumental version">Version monumentale</div></div>
+          </article>
+          <article class="collection-card">
+            <a class="thumb" href="viewer.html?src=images/spot13-detail.jpg&caption=David%20vs%20Goliath%20%E2%80%94%20detail&back=index.html#collection" target="_blank" rel="noopener"><img src="images/spot13-detail.jpg" alt="Artwork detail" /></a>
+            <div class="collection-body"><strong data-fr="Détail" data-en="Detail">Détail</strong><div class="meta" data-fr="Lecture rapprochée de la ligne" data-en="Close reading of the line">Lecture rapprochée de la ligne</div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="artist">
+      <div class="wrap artist-card">
+        <div class="panel">
+          <h2 data-fr="L’artiste" data-en="The artist">L’artiste</h2>
+          <p class="section-intro" data-fr="TWAGIRUMUKIZA développe une pratique entre dessin, peinture, sculpture et interventions dans l’espace urbain. Son travail articule tension du trait, mémoire des formes classiques et impact visuel immédiat." data-en="TWAGIRUMUKIZA develops a practice spanning drawing, painting, sculpture, and interventions in urban space. His work combines line tension, the memory of classical forms, and immediate visual impact.">TWAGIRUMUKIZA développe une pratique entre dessin, peinture, sculpture et interventions dans l’espace urbain. Son travail articule tension du trait, mémoire des formes classiques et impact visuel immédiat.</p>
+          <div class="timeline">
+            <div class="timeline-item"><div class="timeline-year">London</div><div data-fr="Formation à la Heatherley School of Fine Art." data-en="Training at Heatherley School of Fine Art.">Formation à la Heatherley School of Fine Art.</div></div>
+            <div class="timeline-item"><div class="timeline-year">Paris</div><div data-fr="Formation aux Ateliers Beaux-Arts de la Ville de Paris." data-en="Training at the Ateliers Beaux-Arts de la Ville de Paris.">Formation aux Ateliers Beaux-Arts de la Ville de Paris.</div></div>
+            <div class="timeline-item"><div class="timeline-year">Today</div><div data-fr="Pratique en atelier, exposition et diffusion en ligne." data-en="Studio practice, exhibitions, and online circulation.">Pratique en atelier, exposition et diffusion en ligne.</div></div>
+          </div>
+          <div class="social-row">
+            <a class="social-link" href="https://www.instagram.com/inno.twa/" target="_blank" rel="noopener">Instagram</a>
+            <a class="social-link" href="https://www.instagram.com/inno.twag/" target="_blank" rel="noopener">Instagram 2</a>
+            <a class="social-link" href="https://pin.it/1gSDp7wEo" target="_blank" rel="noopener">Pinterest</a>
+          </div>
+        </div>
+        <div class="artist-photo-wrap">
+          <a class="image-open" href="viewer.html?src=images/artist.jpg&caption=Innocent%20Twagirumukiza&back=index.html" target="_blank" rel="noopener">
+            <img class="artist-photo" src="images/artist.jpg" alt="Innocent Twagirumukiza" />
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="wrap footer-main">
+      <div class="footer-card">
+        <h2 data-fr="Acquisition & contact" data-en="Acquisition & contact">Acquisition & contact</h2>
+        <p class="section-intro" data-fr="Pour toute demande d’achat, d’exposition, de tirage ou de collaboration, contactez directement l’artiste." data-en="For any purchase, exhibition, print, or collaboration request, contact the artist directly.">Pour toute demande d’achat, d’exposition, de tirage ou de collaboration, contactez directement l’artiste.</p>
+        <div class="social-row">
+          <a class="btn btn-dark" href="mailto:inno.twa@gmail.com">inno.twa@gmail.com</a>
+          <a class="btn btn-light" href="privacy.html" data-fr="Politique de confidentialité" data-en="Privacy policy">Politique de confidentialité</a>
+        </div>
+      </div>
+      <div class="footer-card">
+        <div class="footer-small">TWAGIRUMUKIZA</div>
+        <p>David vs Goliath</p>
+        <p class="footer-small">Original / Available · Certificate included · Limited edition</p>
+      </div>
+    </div>
+    <div class="wrap footer-row">
+      <span>© TWAGIRUMUKIZA</span>
+      <span data-fr="V13 CLEAN · Images ouvertes dans un autre onglet" data-en="© Site galerie · Tous droits réservés">V13 CLEAN · Images ouvertes dans un autre onglet</span>
+    </div>
+  </footer>
+
+  <script>
+    function setLanguage(lang) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-fr]').forEach(el => {
+        const value = el.getAttribute('data-' + lang);
+        if (value) el.textContent = value;
+      });
+      document.querySelectorAll('.lang-switch button').forEach(btn => btn.classList.remove('active'));
+      const activeBtn = document.getElementById('btn-' + lang);
+      if (activeBtn) activeBtn.classList.add('active');
+      localStorage.setItem('twagGalleryLang', lang);
+    }
+    const savedLang = localStorage.getItem('twagGalleryLang') || 'fr';
+    setLanguage(savedLang);
+  </script>
+</body>
+</html>
