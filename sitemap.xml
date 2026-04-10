@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
     <loc>https://twagirumukiza.github.io/twagirumukiza-davidvsgoliath/</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
 
     <image:image>
       <image:loc>https://twagirumukiza.github.io/twagirumukiza-davidvsgoliath/images/cover.png</image:loc>
-      <image:title>David vs Goliath — contemporary black and white artwork</image:title>
+      <image:title>David vs Goliath contemporary artwork</image:title>
     </image:image>
 
     <image:image>
@@ -62,7 +62,8 @@
 
   <url>
     <loc>https://twagirumukiza.github.io/twagirumukiza-davidvsgoliath/privacy.html</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-04-11</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
