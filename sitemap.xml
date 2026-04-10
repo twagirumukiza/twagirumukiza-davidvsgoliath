@@ -1,76 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
     <loc>https://twagirumukiza.github.io/twagirumukiza-davidvsgoliath/</loc>
-    <lastmod>2026-04-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-
-    <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza-davidvsgoliath/images/cover.png</image:loc>
-      <image:title>David vs Goliath contemporary artwork</image:title>
-    </image:image>
-
-    <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza-davidvsgoliath/images/drawing.jpg</image:loc>
-      <image:title>Black and white portrait drawing David vs Goliath</image:title>
-    </image:image>
-
-    <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza-davidvsgoliath/images/frame.jpg</image:loc>
-      <image:title>Framed contemporary artwork exhibition</image:title>
-    </image:image>
-
-    <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza-davidvsgoliath/images/gallery-frame.jpg</image:loc>
-      <image:title>Art gallery presentation David vs Goliath</image:title>
-    </image:image>
-
-    <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza-davidvsgoliath/images/spot13-a.jpg</image:loc>
-      <image:title>Street art mural Paris Spot 13 portrait</image:title>
-    </image:image>
-
-    <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza-davidvsgoliath/images/spot13-b.jpg</image:loc>
-      <image:title>Urban contemporary mural Paris portrait</image:title>
-    </image:image>
-
-    <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza-davidvsgoliath/images/spot13-c.jpg</image:loc>
-      <image:title>Graffiti portrait black and white art</image:title>
-    </image:image>
-
-    <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza-davidvsgoliath/images/spot13-detail.jpg</image:loc>
-      <image:title>Detail contemporary portrait artwork</image:title>
-    </image:image>
-
-    <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza-davidvsgoliath/images/certificate-preview.png</image:loc>
-      <image:title>Artwork certificate preview David vs Goliath</image:title>
-    </image:image>
-
-    <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza-davidvsgoliath/images/artist.jpg</image:loc>
-      <image:title>Innocent Twagirumukiza artist portrait</image:title>
-    </image:image>
-
   </url>
 
   <url>
     <loc>https://twagirumukiza.github.io/twagirumukiza-davidvsgoliath/privacy.html</loc>
-    <lastmod>2026-04-11</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://twagirumukiza.github.io/twagirumukiza-davidvsgoliath/certificat-20231228100505.pdf</loc>
-    <lastmod>2023-12-28</lastmod>
-    <priority>0.6</priority>
   </url>
 
 </urlset>
