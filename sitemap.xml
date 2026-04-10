@@ -1,99 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset 
-xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- PAGE PRINCIPALE -->
   <url>
     <loc>https://twagirumukiza.github.io/twagirumukiza/</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>1.0</priority>
 
     <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza/cover.png</image:loc>
-      <image:title>David vs Goliath artwork</image:title>
+      <image:loc>https://twagirumukiza.github.io/twagirumukiza/images/cover.png</image:loc>
+      <image:title>David vs Goliath — cover</image:title>
     </image:image>
 
     <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza/drawing.jpg</image:loc>
-      <image:title>Black and white contemporary portrait drawing</image:title>
+      <image:loc>https://twagirumukiza.github.io/twagirumukiza/images/drawing.jpg</image:loc>
+      <image:title>David vs Goliath — drawing</image:title>
     </image:image>
 
     <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza/frame.jpg</image:loc>
-      <image:title>Framed artwork exhibition</image:title>
+      <image:loc>https://twagirumukiza.github.io/twagirumukiza/images/frame.jpg</image:loc>
+      <image:title>David vs Goliath — framed artwork</image:title>
     </image:image>
 
     <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza/gallery-frame.jpg</image:loc>
-      <image:title>Art gallery presentation</image:title>
+      <image:loc>https://twagirumukiza.github.io/twagirumukiza/images/gallery-frame.jpg</image:loc>
+      <image:title>David vs Goliath — gallery view</image:title>
     </image:image>
 
     <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza/spot13-a.jpg</image:loc>
-      <image:title>Street art mural Paris Spot 13</image:title>
+      <image:loc>https://twagirumukiza.github.io/twagirumukiza/images/spot13-a.jpg</image:loc>
+      <image:title>David vs Goliath — Spot 13</image:title>
     </image:image>
 
     <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza/spot13-b.jpg</image:loc>
-      <image:title>Urban art painting Paris</image:title>
+      <image:loc>https://twagirumukiza.github.io/twagirumukiza/images/spot13-b.jpg</image:loc>
+      <image:title>David vs Goliath — Spot 13 wide view</image:title>
     </image:image>
 
     <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza/spot13-c.jpg</image:loc>
-      <image:title>Graffiti contemporary portrait</image:title>
+      <image:loc>https://twagirumukiza.github.io/twagirumukiza/images/spot13-c.jpg</image:loc>
+      <image:title>David vs Goliath — Spot 13 frontal view</image:title>
     </image:image>
 
     <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza/spot13-detail.jpg</image:loc>
-      <image:title>Detail of street artwork</image:title>
+      <image:loc>https://twagirumukiza.github.io/twagirumukiza/images/spot13-detail.jpg</image:loc>
+      <image:title>David vs Goliath — detail</image:title>
     </image:image>
 
+    <image:image>
+      <image:loc>https://twagirumukiza.github.io/twagirumukiza/images/certificate-preview.png</image:loc>
+      <image:title>David vs Goliath — certificate preview</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://twagirumukiza.github.io/twagirumukiza/images/artist.jpg</image:loc>
+      <image:title>Innocent Twagirumukiza — artist portrait</image:title>
+    </image:image>
   </url>
 
-  <!-- PRIVACY -->
   <url>
     <loc>https://twagirumukiza.github.io/twagirumukiza/privacy.html</loc>
-  </url>
-
-</urlset>    </image:image>
-
-    <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza-art/images/spot13-a.jpg</image:loc>
-      <image:title>Street art Spot 13</image:title>
-    </image:image>
-
-    <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza-art/images/spot13-b.jpg</image:loc>
-      <image:title>Street art environment</image:title>
-    </image:image>
-
-    <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza-art/images/spot13-c.jpg</image:loc>
-      <image:title>Monumental version</image:title>
-    </image:image>
-
-  </url>
-
-  <!-- CERTIFICAT -->
-  <url>
-    <loc>https://twagirumukiza.github.io/twagirumukiza-art/#certificate</loc>
-    <priority>0.8</priority>
-
-    <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza-art/images/certificate-preview.png</image:loc>
-      <image:title>Certificate of authenticity</image:title>
-    </image:image>
-  </url>
-
-  <!-- VIEWER (important pour Google Images) -->
-  <url>
-    <loc>https://twagirumukiza.github.io/twagirumukiza-art/viewer.html</loc>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- PRIVACY -->
-  <url>
-    <loc>https://twagirumukiza.github.io/twagirumukiza-art/privacy.html</loc>
+    <lastmod>2026-04-10</lastmod>
     <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://twagirumukiza.github.io/twagirumukiza/certificat-20231228100505.pdf</loc>
+    <lastmod>2023-12-28</lastmod>
+    <priority>0.6</priority>
   </url>
 
 </urlset>
