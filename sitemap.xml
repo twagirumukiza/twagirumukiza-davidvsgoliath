@@ -1,40 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset 
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <!-- PAGE PRINCIPALE -->
   <url>
-    <loc>https://twagirumukiza.github.io/twagirumukiza-art/</loc>
-    <lastmod>2026-04-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://twagirumukiza.github.io/twagirumukiza/</loc>
 
-    <!-- IMAGE PRINCIPALE -->
     <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza-art/images/cover.png</image:loc>
-      <image:title>David vs Goliath — Twagirumukiza</image:title>
+      <image:loc>https://twagirumukiza.github.io/twagirumukiza/cover.png</image:loc>
+      <image:title>David vs Goliath artwork</image:title>
     </image:image>
 
     <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza-art/images/drawing.jpg</image:loc>
-      <image:title>Drawing David vs Goliath</image:title>
+      <image:loc>https://twagirumukiza.github.io/twagirumukiza/drawing.jpg</image:loc>
+      <image:title>Black and white contemporary portrait drawing</image:title>
     </image:image>
+
+    <image:image>
+      <image:loc>https://twagirumukiza.github.io/twagirumukiza/frame.jpg</image:loc>
+      <image:title>Framed artwork exhibition</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://twagirumukiza.github.io/twagirumukiza/gallery-frame.jpg</image:loc>
+      <image:title>Art gallery presentation</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://twagirumukiza.github.io/twagirumukiza/spot13-a.jpg</image:loc>
+      <image:title>Street art mural Paris Spot 13</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://twagirumukiza.github.io/twagirumukiza/spot13-b.jpg</image:loc>
+      <image:title>Urban art painting Paris</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://twagirumukiza.github.io/twagirumukiza/spot13-c.jpg</image:loc>
+      <image:title>Graffiti contemporary portrait</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://twagirumukiza.github.io/twagirumukiza/spot13-detail.jpg</image:loc>
+      <image:title>Detail of street artwork</image:title>
+    </image:image>
+
   </url>
 
-  <!-- GALERIE -->
+  <!-- PRIVACY -->
   <url>
-    <loc>https://twagirumukiza.github.io/twagirumukiza-art/#collection</loc>
-    <priority>0.9</priority>
+    <loc>https://twagirumukiza.github.io/twagirumukiza/privacy.html</loc>
+  </url>
 
-    <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza-art/images/frame.jpg</image:loc>
-      <image:title>Framed artwork</image:title>
-    </image:image>
-
-    <image:image>
-      <image:loc>https://twagirumukiza.github.io/twagirumukiza-art/images/gallery-frame.jpg</image:loc>
-      <image:title>Gallery view</image:title>
-    </image:image>
+</urlset>    </image:image>
 
     <image:image>
       <image:loc>https://twagirumukiza.github.io/twagirumukiza-art/images/spot13-a.jpg</image:loc>
